@@ -1,0 +1,46 @@
+{
+  "name": "starter-express-gulp-browserify",
+  "version": "0.1.0",
+  "description": "An example repo using Node + Expressjs + Gulp + Browserify",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "dev": "gulp",
+    "test": "gulp test",
+    "build": "gulp build",
+    "prod": "export NODE_ENV=production; npm start;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanstilwell/starter-express-gulp-browserify.git"
+  },
+  "author": "Nathan Stilwell",
+  "engines": {
+    "node": ">=0.12.x",
+    "npm": ">=2.0.0"
+  },
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/nathanstilwell/starter-express-gulp-browserify/issues"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "event-stream": "^3.3.1",
+    "glob": "^5.0.10",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "gulp-mocha": "^2.1.1",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "less-plugin-clean-css": "^1.5.0",
+    "less-plugin-npm-import": "^2.1.0",
+    "rainbow-barf": "^0.1.1",
+    "require-dir": "^0.3.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.12.4",
+    "hbs": "^3.1.0"
+  }
+}

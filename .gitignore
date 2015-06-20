@@ -1,0 +1,19 @@
+# meta files
+.DS_Store
+.allow-devtools-edit
+.history
+.jshintrc
+
+# logs
+logs
+log
+
+# npm
+node_modules
+npm-debug.log
+
+# compiled files
+!public/css/.keep
+public/css/*
+!public/js/.keep
+public/js/*
