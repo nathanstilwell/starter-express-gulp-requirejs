@@ -1,9 +1,10 @@
-/*jshint esnext: true, laxcomma: true, eqeqeq: true, bitwise: true, curly: true, latedef: true, strict: true, plusplus: true*/
-/*global module, console*/
+/*global define, console*/
 
 'use strict';
 
-module.exports = function (name) {
-  name = name || '';
-  console.log('Module C says, ' + name);
-};
+define([], function () {
+  return function cModule (name) {
+    name = name || '';
+    console.log('Module C says, ' + name );
+  };
+});

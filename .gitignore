@@ -7,13 +7,20 @@
 # logs
 logs
 log
+newrelic_agent.log
 
 # npm
 node_modules
 npm-debug.log
 
+# bower
+bower_components
+!assets/less/vendor/.keep
+assets/less/vendor/*
+!assets/javascript/vendor/.keep
+public/js/vendor/*
+
 # compiled files
 !public/css/.keep
 public/css/*
-!public/js/.keep
-public/js/*
+

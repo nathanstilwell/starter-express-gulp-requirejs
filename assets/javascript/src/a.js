@@ -1,16 +1,14 @@
-/*jshint esnext: true, laxcomma: true, eqeqeq: true, bitwise: true, curly: true, latedef: true, strict: true, plusplus: true*/
-/*global module, require, console*/
+/*global define, console*/
 
 'use strict';
 
-module.exports = function  (name) {
-  var b = require('./b');
-  var c = require('./c');
+define(['src/b', 'src/c'], function  (b, c) {
+  return function aModule (name) {
+    name = name || '';
 
-  name = name || '';
+    console.log('Module A says, ' + name);
 
-  console.log('Module A says, ' + name);
-
-  b(name);
-  c(name);
-};
+    b(name);
+    c(name);
+  };
+});

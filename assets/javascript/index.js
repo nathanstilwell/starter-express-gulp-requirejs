@@ -1,8 +1,20 @@
-/*jshint esnext: true, laxcomma: true, eqeqeq: true, bitwise: true, curly: true, latedef: true, strict: true, plusplus: true*/
-/*global require*/
+/*global define, console */
 
-'use strict';
+define([
+  'jquery',
+  'underscore',
+  'backbone',
 
-var a = require('./src/a');
+  'src/a'
+],
 
-a('Sample App');
+function ($, _, backbone, mod1) {
+  'use strict';
+
+  mod1.init();
+
+  console.log('backbone: ' + backbone.VERSION);
+  console.log('underscore: ' + _.VERSION);
+  console.log('jquery: ' + $.fn.jquery);
+  console.log('index.js');
+});
