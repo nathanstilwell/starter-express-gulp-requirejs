@@ -23,4 +23,5 @@ public/js/vendor/*
 # compiled files
 !public/css/.keep
 public/css/*
-
+!public/js/.keep
+public/js/*

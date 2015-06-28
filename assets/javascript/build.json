@@ -1,0 +1,15 @@
+{
+  "baseUrl": "assets/javascript",
+  "dir": "public/js/",
+  "mainConfigFile": "assets/javascript/config.js",
+  "optimize": "uglify2",
+  "generateSourceMaps": true,
+  "preserveLicenseComments": false,
+  "modules": [{
+    "name": "src/index",
+    "insertRequire": ["src/index"],
+    "include": [
+      "vendor/requirejs/require"
+    ]
+  }]
+}

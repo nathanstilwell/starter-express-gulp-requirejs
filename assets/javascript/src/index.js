@@ -8,10 +8,10 @@ define([
   'src/a'
 ],
 
-function ($, _, backbone, mod1) {
+function ($, _, backbone, a) {
   'use strict';
 
-  mod1.init();
+  a('Index');
 
   console.log('backbone: ' + backbone.VERSION);
   console.log('underscore: ' + _.VERSION);
